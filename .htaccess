@@ -1,0 +1,5 @@
+# Keep server-side files private (Apache)
+<FilesMatch "^(config\.php|database\.sql|error\.log)$">
+  Require all denied
+</FilesMatch>
+Options -Indexes
